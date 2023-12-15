@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <header>
+    <img src="/assets/images/ctulogo.png">
+    <p>CTU-TUBURAN</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#home"><span>Home</span></a></li>
+      <li><a href="#about"><span>About</span></a></li>
+      <li><a href="#vmgo"><span>VMGO</span></a></li>
+      <li><a href="#infra"><span>Infrastructure</span></a></li>
+    </ul>
+  </nav>
+  <section id="home">
+    <h1>
+      <span>CEBU TECHNOLOGICAL UNIVERSITY<br>TUBURAN CAMPUS</span>
+    </h1>
+  </section>
+  <section id="about" class="static-background">
+    <div class="main-about">
+      <div class="about">
+          <div class="about-text">
+            <img src="/assets/images/bgg.jpg">
+            <div class="content">
+              <div class="title">
+                <h3>CEBU TECHNOLOGICAL UNIVERSITY</h3>
+              </div>
+              <p>
+                Cebu Technological University (CTU) Tuburan started its humble beginnings in 1945. It is situated in Brgy. 8, Tuburan, Cebu. The campus has a land area of 79, 936 sq meters. In the academic year 2019-2020, there are 3066 undergraduate students and 130 graduate students respectively. There are six colleges in CTU Tuburan, with each offering different degree programs. The College of Engineering offers Bachelor of Science in Civil Engineering, Bachelor of Science in Electrical Engineering, Bachelor of Science in Industrial Engineering and Bachelor of Science in Mechanical Engineering. The College of Arts and Sciences offers two-degree programs : Bachelor of Arts in English Language (BAEL) major in English Language Studies and Bachelor of Arts in Literature (BaLit) major in Literary and Cultural Studies. The College of Technology (COT) offers Bachelor of Industrial Technology with nine majors: Automotive Technology, Computer Technology, Drafting Technology, Electrical Technology, Electronics Technology, Food Preparation Services Technology, Garments Technology, Machine Shop Technology and Welding and Fabrication Technology. Additionally, COT also has Bachelor of Science in Information Technology and Bachelor of Science in Hospitality Management. The College of Education offers three-degree programs: Bachelor in Elementary Education, Bachelor in Secondary Education major in Mathematics and Bachelor of Technology and Livelihood Education. The College of Agriculture offers Bachelor of Science in Agriculture with three majors: Animal Science, Agronomy and Horticulture. The Graduate School offers Doctor in Development Education, Master in Public Administration, Master of Arts in Vocational Education and Master of Arts in Education major in Administration and Supervision.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section id="vmgo" class="static-background">
+  <div class="card-grid">
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(/assets/images/edited_vmgo/vmg1.png)"></div>
+      <div class="card__content">
+        <h3 class="card__heading">VISION</h3>
+      </div>
+    </a>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(/assets/images/edited_vmgo/vmg2.png)"></div>
+      <div class="card__content">
+        <h3 class="card__heading">MISION</h3>
+      </div>
+    </a>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(/assets/images/edited_vmgo/vmg3.png)"></div>
+      <div class="card__content">
+        <h3 class="card__heading">GOALS</h3>
+      </div>
+    </a>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(/assets/images/edited_vmgo/4.png)"></div>
+      <div class="card__content">
+        <h3 class="card__heading">OBJECTIVES</h3>
+      </div>
+    </a>
+  </div>
+</section>
+  <section id="infra">
+    <video controls autoplay>
+      <source src="/assets/vid/VKFA3452.MOV" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+  </div>
+  </section>
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var navLinks = document.querySelectorAll("nav a");
+
+    navLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        navLinks.forEach(function (otherLink) {
+          otherLink.classList.remove("active");
+        });
+
+        link.classList.add("active");
+      });
+    });
+  });
+</script>
+</html>
